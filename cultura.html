@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COOLTURA Cafe & Pizzeria | Zenica</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f7f7;
+    color:#222;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1800&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero{
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:5rem;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff7b00;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff9d3b;
+    transform:translateY(-3px);
+}
+
+section{
+    padding:90px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:3rem;
+    color:#111;
+}
+
+.section-title p{
+    color:#777;
+    margin-top:10px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text h3{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+    color:#555;
+}
+
+.menu{
+    background:white;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#666;
+}
+
+.features{
+    background:#111;
+    color:white;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.feature{
+    text-align:center;
+    padding:30px;
+}
+
+.feature h3{
+    margin-bottom:15px;
+    color:#ff7b00;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.contact{
+    background:#ff7b00;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:15px;
+    font-size:1.1rem;
+}
+
+footer{
+    background:#111;
+    color:#aaa;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:900px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+<h1>COOLTURA</h1>
+<p>Mjesto gdje se susreću vrhunska pizza, odlična kafa i moderan ambijent u srcu Zenice.</p>
+<a href="#menu" class="btn">Pogledaj ponudu</a>
+</div>
+</header>
+
+<section>
+<div class="section-title">
+<h2>O nama</h2>
+<p>Moderna atmosfera, ukusna hrana i opuštena energija.</p>
+</div>
+
+<div class="about">
+<img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80">
+
+<div class="about-text">
+<h3>Više od obične pizzerije</h3>
+<p>
+COOLTURA je jedno od omiljenih mjesta za druženje u Zenici. Poznata po ukusnim pizzama,
+bogatoj ponudi doručaka, vrhunskoj kafi i modernom enterijeru, predstavlja idealno mjesto
+za jutarnju kafu, poslovni sastanak ili večernje druženje sa prijateljima.
+</p>
+</div>
+</div>
+</section>
+
+<section class="menu" id="menu">
+
+<div class="section-title">
+<h2>Naša ponuda</h2>
+<p>Najpopularniji specijaliteti</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Pizza Specijaliteti</h3>
+<p>Svježe tijesto, kvalitetni sastojci i autentični italijanski recepti.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Doručak</h3>
+<p>Palačinci, sendviči i ukusni obroci za savršen početak dana.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80">
+<div class="card-content">
+<h3>Premium Kafa</h3>
+<p>Pažljivo pripremljena kafa za istinske ljubitelje vrhunskog okusa.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="features">
+
+<div class="section-title">
+<h2 style="color:white;">Zašto odabrati COOLTURU?</h2>
+</div>
+
+<div class="feature-grid">
+
+<div class="feature">
+<h3>Moderan Ambijent</h3>
+<p>Elegantno uređen prostor za svaki tip druženja.</p>
+</div>
+
+<div class="feature">
+<h3>Brza Usluga</h3>
+<p>Ljubazno osoblje i profesionalna usluga.</p>
+</div>
+
+<div class="feature">
+<h3>Kvalitetna Hrana</h3>
+<p>Svježi sastojci i pažljivo kreirana ponuda.</p>
+</div>
+
+<div class="feature">
+<h3>Idealna Lokacija</h3>
+<p>Smještena u Gradskoj Areni u Zenici.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+
+<div class="section-title">
+<h2>Galerija</h2>
+<p>Atmosfera koju ćete poželjeti doživjeti.</p>
+</div>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80">
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80">
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Posjetite nas</h2>
+
+<p>📍 Gradska Arena, Zenica</p>
+<p>📞 +387 32 205 550</p>
+<p>☕ Pizza • Kafa • Doručak • Druženje</p>
+
+</section>
+
+<footer>
+© 2025 COOLTURA Cafe & Pizzeria | Demo web stranica
+</footer>
+
+</body>
+</html>
